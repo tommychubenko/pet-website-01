@@ -1,14 +1,706 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Free Web tutorials for HTML and CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Site</title>
+</head>
+
+<body>
+
+
+    <section class="header">
+        <div class="container header-container"><a href="#" class="header_logo--link"><img loading="lazy"
+                    src="./images/logo_mobile.svg" alt="Logo" class="logo_mobile"></a>
+
+            <ul class="main_menu">
+                <li class="main_menu--item"><a href="#services" class="main_menu--link">Services</a></li>
+                <li class="main_menu--item"><a href="#portfolio" class="main_menu--link">Portfolio</a></li>
+                <li class="main_menu--item"><a href="#steps" class="main_menu--link">Steps</a></li>
+                <li class="main_menu--item"><a href="#designers" class="main_menu--link">Design</a></li>
+                <li class="main_menu--item"><button class="main_menu--btn">Order</button></li>
+            </ul>
+
+            <button class="burger">
+
+                <img loading="lazy" src="./images/dot.svg" alt="Menu button"><img loading="lazy" src="./images/dot.svg"
+                    alt="Image"><img loading="lazy" src="./images/dot.svg" alt="Default image">
+
+            </button>
+        </div>
+    </section>
+
+
+
+    <section class="hero">
+        <picture>
+            <source srcset="./images/hero_image@x1.png 1x, ./images/hero_image@x2.png 2x " media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image">
+        </picture>
+        <picture>
+            <source srcset="./images/hero_elipse@x1.png 1x, ./images/hero_elipse@x2.png 2x " media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image--pc-elipce">
+        </picture>
+        <picture>
+            <source srcset="./images/hero_left_elipse@x1.png 1x, ./images/hero_left_elipse@x2.png 2x "
+                media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image--pc-leftElipce">
+        </picture>
+        <picture>
+            <source srcset="./images/hero_cart@x1.png 1x, ./images/hero_cart@x2.png 2x " media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image--pc-cart">
+        </picture>
+        <picture>
+            <source srcset="./images/hero_left_blanket@x1.png 1x, ./images/hero_left_blanket@x2.png 2x "
+                media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image--pc-blanket">
+        </picture>
+        <picture>
+            <source srcset="./images/hero_buble@x1.png 1x, ./images/hero_buble@x2.png 2x " media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image--pc-buble">
+        </picture>
+        <div class="container">
+
+
+
+
+            <h1 class="hero_title">Developing web site in a week</h1>
+            <p class="hero_text">Design of an online store, micro UX elements, baskets, personal account - from the company
+                style
+                to the user interface in a short time with the Virtual Designers team
+            </p>
+            <button class="button button_one">Order</button>
+        </div>
+    </section>
+
+
+
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="services_title">What is included in the online store design service?</h2>
+
+
+
+            <ul class="services_list">
+                <li class="services_item">
+                    <a class="services_link">
+                        <div class="services_link--menuClosed">
+                            <div class="services_link--menuClosedDotThumb"><img loading="lazy"
+                                    src="./images/list_before.svg" alt="Menu" class="services_link--menuClosedDot">
+                            </div>
+                            <span class="services_link--menuClosedTitle">Portal design
+
+                            </span>
+                            <img loading="lazy" src="./images/menu_up.svg" alt="Default image"
+                                class="services_link--menuClosedArrow">
+                        </div>
+                        <div class="services_link--menuOpen">
+                            <div class="services_link--menuOpenThumb">
+                                <div class="services_link--menuOpenDotThumb"><img loading="lazy"
+                                        src="./images/list_before_blue.svg" alt="Menu"
+                                        class="services_link--menuOpenDot"></div>
+                                <span class="services_link--menuOpenTitle">Portal design
+                                </span>
+                                <img loading="lazy" src="./images/menu_down.svg" alt="Menu"
+                                    class="services_link--menuOpenArrow">
+                            </div>
+
+                            <div class="services_link--menuOpenText">Portal design is content design,
+                                the collection of all graphic elements on a web page. The main task
+                                design - introduce the user to the page. Thoughtful design creates the right
+                                impression of the company.
+
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+                <li class="services_item">
+                    <a class="services_link">
+                        <div class="services_link--menuClosed">
+                            <div class="services_link--menuClosedDotThumb"><img loading="lazy"
+                                    src="./images/list_before.svg" alt="Image" class="services_link--menuClosedDot">
+                            </div>
+                            <span class="services_link--menuClosedTitle">Responsive mobile design
+
+
+                            </span>
+                            <img loading="lazy" src="./images/menu_up.svg" alt="Next"
+                                class="services_link--menuClosedArrow">
+                        </div>
+                        <div class="services_link--menuOpen">
+                            <div class="services_link--menuOpenThumb">
+                                <div class="services_link--menuOpenDotThumb"><img loading="lazy"
+                                        src="./images/list_before_blue.svg" alt="Default image"
+                                        class="services_link--menuOpenDot"></div>
+                                <span class="services_link--menuOpenTitle">Responsive mobile design
+
+                                </span>
+                                <img loading="lazy" src="./images/menu_down.svg" alt="Default image"
+                                    class="services_link--menuOpenArrow">
+                            </div>
+
+                            <div class="services_link--menuOpenText">The mobile version of the site is user-friendly,
+                                because it is greatly simplified compared to the normal version. Mobile
+                                the version allows you to make an order / purchase with a minimum of actions.
+                                With the adaptive version, the entire structure of the site automatically adjusts to different
+                                screen width.
+
+
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+                <li class="services_item">
+                    <a class="services_link">
+                        <div class="services_link--menuClosed">
+                            <div class="services_link--menuClosedDotThumb"><img loading="lazy"
+                                    src="./images/list_before.svg" alt="Image" class="services_link--menuClosedDot">
+                            </div>
+                            <span class="services_link--menuClosedTitle">Desktop version design
+
+
+                            </span>
+                            <img loading="lazy" src="./images/menu_up.svg" alt="Default image"
+                                class="services_link--menuClosedArrow">
+                        </div>
+                        <div class="services_link--menuOpen">
+                            <div class="services_link--menuOpenThumb">
+                                <div class="services_link--menuOpenDotThumb"><img loading="lazy"
+                                        src="./images/list_before_blue.svg" alt="Default image"
+                                        class="services_link--menuOpenDot"></div>
+                                <span class="services_link--menuOpenTitle">Desktop version design
+
+                                </span>
+                                <img loading="lazy" src="./images/menu_down.svg" alt="Image"
+                                    class="services_link--menuOpenArrow">
+                            </div>
+
+                            <div class="services_link--menuOpenText">The desktop version of the site is viewed by users
+                                from desktop computers. Main goal: surf, delve into
+                                details, get more information, compare, choose, ask the price.
+
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+                <li class="services_item">
+                    <a class="services_link">
+                        <div class="services_link--menuClosed">
+                            <div class="services_link--menuClosedDotThumb"><img loading="lazy"
+                                    src="./images/list_before.svg" alt="Image" class="services_link--menuClosedDot">
+                            </div>
+                            <span class="services_link--menuClosedTitle">User interface
+
+
+                            </span>
+                            <img loading="lazy" src="./images/menu_up.svg" alt="Image"
+                                class="services_link--menuClosedArrow">
+                        </div>
+                        <div class="services_link--menuOpen">
+                            <div class="services_link--menuOpenThumb">
+                                <div class="services_link--menuOpenDotThumb"><img loading="lazy"
+                                        src="./images/list_before_blue.svg" alt="Image"
+                                        class="services_link--menuOpenDot"></div>
+                                <span class="services_link--menuOpenTitle">User interface
+
+                                </span>
+                                <img loading="lazy" src="./images/menu_down.svg" alt="Image"
+                                    class="services_link--menuOpenArrow">
+                            </div>
+
+                            <div class="services_link--menuOpenText">The goal of user interface design is to make
+                                interaction as simple and effective as possible
+                                perhaps in terms of achieving the user's goals.
+
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+                <li class="services_item">
+                    <a class="services_link">
+                        <div class="services_link--menuClosed">
+                            <div class="services_link--menuClosedDotThumb"><img loading="lazy"
+                                    src="./images/list_before.svg" alt="Image" class="services_link--menuClosedDot">
+                            </div>
+                            <span class="services_link--menuClosedTitle">Micro UX
+
+                            </span>
+                            <img loading="lazy" src="./images/menu_up.svg" alt="Image"
+                                class="services_link--menuClosedArrow">
+                        </div>
+                        <div class="services_link--menuOpen">
+                            <div class="services_link--menuOpenThumb">
+                                <div class="services_link--menuOpenDotThumb"><img loading="lazy"
+                                        src="./images/list_before_blue.svg" alt="Image"
+                                        class="services_link--menuOpenDot"></div>
+                                <span class="services_link--menuOpenTitle">Micro UX
+                                </span>
+                                <img loading="lazy" src="./images/menu_down.svg" alt="Image"
+                                    class="services_link--menuOpenArrow">
+                            </div>
+
+                            <div class="services_link--menuOpenText">Micro-animation can change the perception of a product,
+                                user behavior and increase conversion. small,
+                                predominantly functional animations support the user: provide
+                                visual feedback and more
+                                clearly reflect the changes that are taking place.
+
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+
+
+        <picture>
+            <source srcset="./images/services_bag@x1.png 1x, ./images/services_bag@x2.png 2x "
+                media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="services_image--pc--bag">
+        </picture>
+
+    </section>
+
+    <section class="steps" id="steps">
+        <div class="container">
+            <picture>
+                <source srcset="./images/steps_buble@x1.png 1x, ./images/steps_buble@x2.png 2x "
+                    media="(min-width: 100px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="steps_buble">
+            </picture>
+            <picture>
+                <source srcset="./images/steps_blanked@x1.png 1x, ./images/steps_blanked@x2.png 2x "
+                    media="(min-width: 100px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="steps_blanked">
+            </picture>
+
+            <h2 class="steps_title">Этапы разработки
+                интернет-магазина</h2>
+
+            <div class="steps_thumb">
+                <ul class="steps_list" style="transform: translateX(0);">
+                    <li class="steps_item">
+                        <div class="steps_card">
+                            <div>
+                                <p class="steps_card--title">1. Analysis</p>
+                                <p class="steps_card--text">In order for the online store to be profitable, before it
+                                    launch, it is necessary to analyze other market offers,
+                                    evaluate competitors and find the most convenient solution.</p>
+                            </div>
+                            <picture>
+                                <source srcset="./images/card_image_1@x1.png 1x, ./images/card_image_1@x2.png 2x "
+                                    media="(min-width: 100px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="steps_card--image">
+                            </picture>
+
+                        </div>
+                    </li>
+                    <li class="steps_item">
+                        <div class="steps_card">
+                            <div>
+                                <p class="steps_card--title">2. Visual solution</p>
+                                <p class="steps_card--text">Development of the design of the key pages of the store - the main,
+                                    catalog,
+                                    information sections, basket section, goods section. For
+                                    For us, the main thing is to convey the mood of the brand, to make a user-friendly website.</p>
+                            </div>
+                            <picture>
+                                <source srcset="./images/card_image_2@x1.png 1x, ./images/card_image_2@x2.png 2x "
+                                    media="(min-width: 100px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="steps_card--image">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="steps_item">
+                        <div class="steps_card">
+                            <div>
+                                <p class="steps_card--title">3. Technical implementation</p>
+                                <p class="steps_card--text">After the approval of the design layout, the next stage begins -
+                                    layout. This is a laborious process: programmers must
+                                    write carefully to avoid technical errors.</p>
+                            </div>
+                            <picture>
+                                <source srcset="./images/card_image_3@x1.png 1x, ./images/card_image_3@x2.png 2x "
+                                    media="(min-width: 100px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="steps_card--image">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="steps_item">
+                        <div class="steps_card">
+                            <div>
+                                <p class="steps_card--title">4. Filling with content</p>
+                                <p class="steps_card--text">Creation and publication of texts, as well as video material.
+                                    Good
+                                    content and high-quality photos attract more
+                                    visitors and help the customer to get better acquainted with the assortment.</p>
+                            </div>
+                            <picture>
+                                <source srcset="./images/card_image_4@x1.png 1x, ./images/card_image_4@x2.png 2x "
+                                    media="(min-width: 100px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="steps_card--image">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="steps_item">
+                        <div class="steps_card">
+                            <div>
+                                <p class="steps_card--title">5. Testing</p>
+                                <p class="steps_card--text">Drawing up a test plan to identify errors.
+                                    Examination
+                                    site performance and visual perception to improve
+                                    site. Checklists are also used to clearly identify errors and eliminate them.
+                                </p>
+                            </div>
+                            <picture>
+                                <source srcset="./images/card_image_5@x1.png 1x, ./images/card_image_5@x2.png 2x "
+                                    media="(min-width: 100px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="steps_card--image">
+                            </picture>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="steps_controls">
+            <button class="steps_controls--left controlBtn"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="58" height="58" rx="14" stroke="#67AEFC" stroke-width="2" />
+                    <path d="M33 42L21 30L33 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <button class="steps_controls--right controlBtn">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1.00012" width="58" height="58" rx="14" stroke="#67AEFC" stroke-width="2" />
+                    <path d="M26 42.0001L38 30.0001L26 18.0001" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    <section class="samples" id="portfolio">
+        <div class="container">
+            <h2 class="samples_title">Examples
+                online stores</h2>
+            <div class="samples_thumb">
+                <ul class="samples_list" style="transform: translateY(0);">
+                    <li class="samples_item">
+                        <a class="samples_link">
+                            <picture>
+                                <source srcset="./images/samples/001@x1.png 1x, ./images/samples/001@x2.png 2x "
+                                    media="(max-width: 1199px)">
+                                <source srcset="./images/samples/big_001@x1.png 1x, ./images/samples/big_001@x2.png 2x"
+                                    media="(min-width: 1200px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="samples_image">
+                            </picture>
+                            <div class="samples_item--overflow">
+                                <p class="samples_item--overflowTitle">Online shop</p>
+                                <p class="samples_item--overflowText">for bulk purchases</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples_item">
+                        <a class="samples_link">
+                            <picture>
+                                <source srcset="./images/samples/002@x1.png 1x, ./images/samples/002@x2.png 2x "
+                                    media="(max-width: 1199px)">
+                                <source srcset="./images/samples/big_002@x1.png 1x, ./images/samples/big_002@x2.png 2x"
+                                    media="(min-width: 1200px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="samples_image">
+                            </picture>
+                            <div class="samples_item--overflow">
+                                <p class="samples_item--overflowTitle">Online shop</p>
+                                <p class="samples_item--overflowText">for florists</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples_item">
+                        <a class="samples_link">
+                            <picture>
+                                <source srcset="./images/samples/003@x1.png 1x, ./images/samples/003@x2.png 2x "
+                                    media="(max-width: 1199px)">
+                                <source srcset="./images/samples/big_003@x1.png 1x, ./images/samples/big_003@x2.png 2x"
+                                    media="(min-width: 1200px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="samples_image">
+                            </picture>
+                            <div class="samples_item--overflow">
+                                <p class="samples_item--overflowTitle">Online shop</p>
+                                <p class="samples_item--overflowText">for hairdressers</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples_item">
+                        <a class="samples_link">
+                            <picture>
+                                <source srcset="./images/samples/004@x1.png 1x, ./images/samples/004@x2.png 2x "
+                                    media="(max-width: 1199px)">
+                                <source srcset="./images/samples/big_004@x1.png 1x, ./images/samples/big_004@x2.png 2x"
+                                    media="(min-width: 1200px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="samples_image">
+                            </picture>
+                            <div class="samples_item--overflow">
+                                <p class="samples_item--overflowTitle">Online shop</p>
+                                <p class="samples_item--overflowText">for makeup artists</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples_item">
+                        <a class="samples_link">
+                            <picture>
+                                <source srcset="./images/samples/005@x1.png 1x, ./images/samples/005@x2.png 2x "
+                                    media="(max-width: 1199px)">
+                                <source srcset="./images/samples/big_005@x1.png 1x, ./images/samples/big_005@x2.png 2x"
+                                    media="(min-width: 1200px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="samples_image">
+                            </picture>
+                            <div class="samples_item--overflow">
+                                <p class="samples_item--overflowTitle">Online shop</p>
+                                <p class="samples_item--overflowText">for confectioners</p>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li class="samples_item">
+                        <a class="samples_link">
+                            <picture>
+                                <source srcset="./images/samples/006@x1.png 1x, ./images/samples/006@x2.png 2x "
+                                    media="(max-width: 1199px)">
+                                <source srcset="./images/samples/big_006@x1.png 1x, ./images/samples/big_006@x2.png 2x"
+                                    media="(min-width: 1200px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="samples_image">
+                            </picture>
+                            <div class="samples_item--overflow">
+                                <p class="samples_item--overflowTitle">Online shop</p>
+                                <p class="samples_item--overflowText">for artists</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="samples_controls">
+                <button class="samples_controls--left controlBtn"><svg width="60" height="60" viewBox="0 0 60 60"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1" width="58" height="58" rx="14" stroke="#67AEFC" stroke-width="2" />
+                        <path d="M33 42L21 30L33 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+
+
+
+                <button class="samples_controls--right controlBtn"><svg width="60" height="60" viewBox="0 0 60 60"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1.00012" width="58" height="58" rx="14" stroke="#67AEFC" stroke-width="2" />
+                        <path d="M26 42.0001L38 30.0001L26 18.0001" stroke="black" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="moreinfo">
+        <div class="container">
+
+            <picture>
+                <source srcset="./images/moreinfo_buble@x1.png 1x, ./images/moreinfo_buble@x2.png 2x "
+                    media="(min-width: 100px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="moreinfo_buble--blue">
+            </picture>
+            <picture>
+                <source srcset="./images/moreinfo_buble_grey@x1.png 1x, ./images/moreinfo_buble_grey@x2.png 2x "
+                    media="(min-width: 100px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="moreinfo_buble">
+            </picture>
+
+
+
+
+            <h2 class="moreinfo_title">Необходимо больше информации?</h2>
+            <picture>
+                <source srcset="./images/moreinfo_main_image@x1.png 1x, ./images/moreinfo_main_image@x2.png 2x "
+                    media="(max-width: 1199px)">
+                <source srcset="./images/big_moreinfo_main_image@x1.png 1x, ./images/big_moreinfo_main_image@x2.png 2x "
+                    media="(min-width: 1200px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="moreinfo_image">
+            </picture>
+
+
+
+            <p class="moreinfo_text">If you are the owner of an online store or are just starting your journey in e-commerce
+                commerce and you need a unique online store design for a startup, contact our web designer.
+                For a favorable price and a short period
+                time, it will help visualize your web project.</p>
+            <button class="moreinfo_button button_one">submit your application</button>
+        </div>
+    </section>
+    <section class="request">
+        <div class="container">
+            <h2 class="request_title">Discuss the project</h2>
+            <p class="request_text">Tell us about your business goals and we will help you achieve them</p>
+            <form class="request_form">
+                <input type="text" class="request_form--input" placeholder="Имя" required>
+                <input class="request_form--input" placeholder="Telegram/Viber" required type="number">
+                <input class="request_form--input" placeholder="Email" required type="email">
+                <button type="submit" class="request_form--btn button_one">Send</button>
+            </form>
+            <picture>
+                <source srcset="./images/request_image@x1.png 1x, ./images/request_image@x2.png 2x "
+                    media="(max-width: 1199px)">
+                <source srcset="./images/request_image_2@x1.png 1x, ./images/request_image_2@x2.png 2x "
+                    media="(min-width: 1200px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="request_image">
+            </picture>
+            <picture>
+                <source srcset="./images/request_blanked@x1.png 1x, ./images/request_blanked@x1.png 2x "
+                    media="(min-width: 1200px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="request_image--blanket">
+            </picture>
+            <picture>
+                <source srcset="./images/moreinfo_buble_grey@x1.png 1x, ./images/moreinfo_buble_grey@x2.png 2x "
+                    media="(min-width: 100px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="request_buble">
+            </picture>
+        </div>
+    </section>
+    <section class="footer" id="designers">
+        <div class="container">
+            <div class="mobile-view">
+                <a href="#"><img loading="lazy" src="./images/logo_footer.svg" alt="Image" class="footer_logo"></a>
+                <div class="footer_info">
+                    <ul class="footer_contacts--list">
+                        <li class="footer_contacts--item"><a href="tel:+380990001122" class="footer_contacts--link"><img
+                                    loading="lazy" src="./images/viber_logo_1.svg" alt="Image"
+                                    class="footer_contacts--link--logo">
+                                <p class="footer_contacts--text">Max
+                                    +1 234 567 89 78</p>
+                            </a></li>
+                        <li class="footer_contacts--item"><a href="tel:+380990001122" class="footer_contacts--link"><img
+                                    loading="lazy" src="./images/viber_logo_1.svg" alt="Image"
+                                    class="footer_contacts--link--logo">
+                                <p class="footer_contacts--text">Max
+                                    +1 234 567 89 78</p>
+                            </a></li>
+                        <li class="footer_contacts--item"><a href="tel:+380990001122" class="footer_contacts--link"><img
+                                    loading="lazy" src="./images/viber_logo_1.svg" alt="Image"
+                                    class="footer_contacts--link--logo">
+                                <p class="footer_contacts--text">Max
+                                    +1 234 567 89 78</p>
+                            </a></li>
+
+                    </ul>
+                    <ul class="footer_social--list">
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/fb.svg" alt="facebook"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/tg.svg" alt="telegram"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/viber.svg" alt="viber"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/whatsapp.svg" alt="watsapp"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/insta.svg" alt="instagram"
+                                    class="footer_social--link--logo"></a></li>
+                    </ul>
+                    <div class="footer_copyrights">
+                        <p class="footer_copyrights--email"><a href="mailto:hr@d-vs.com"
+                                class="footer_copyrights--email--link">box@leffberg.com</a></p>
+                        <p class="footer_copyrights--info">Leffberg 2018-2021 All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-view">
+                <div class="first-block"><a href="#"><img loading="lazy" src="./images/logo_footer.svg" alt="Image"
+                            class="footer_logo"></a>
+                    <ul class="footer_social--list">
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/pc_fb.svg" alt="facebook"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/pc_tg.svg" alt="telegram"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/pc_viber.svg" alt="viber"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/pc_whatsapp.svg" alt="watsapp"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/pc_insta.svg" alt="instagram"
+                                    class="footer_social--link--logo"></a></li>
+                    </ul>
+                </div>
+                <ul class="footer_contacts--list">
+                    <li class="footer_contacts--item"><a href="tel:+380990001122" class="footer_contacts--link"><img
+                                loading="lazy" src="./images/pc_whatsapp.svg" alt="Image"
+                                class="footer_contacts--link--logo">
+                            <p class="footer_contacts--text">Max
+                                +1 234 567 89 78</p>
+                        </a></li>
+                    <li class="footer_contacts--item"><a href="tel:+380990001122" class="footer_contacts--link"><img
+                                loading="lazy" src="./images/pc_whatsapp.svg" alt="Image"
+                                class="footer_contacts--link--logo">
+                            <p class="footer_contacts--text">Max
+                                +1 234 567 89 78</p>
+                        </a></li>
+                    <li class="footer_contacts--item"><a href="tel:+380990001122" class="footer_contacts--link"><img
+                                loading="lazy" src="./images/pc_whatsapp.svg" alt="Image"
+                                class="footer_contacts--link--logo">
+                            <p class="footer_contacts--text">Max
+                                +1 234 567 89 78</p>
+                        </a></li>
+
+                </ul>
+
+                <div class="footer_info">
+
+                    <p class="footer_copyrights--email"><a href="mailto:hr@d-vs.com"
+                            class="footer_copyrights--email--link">box@leffberg.com</a>
+                    </p>
+
+                </div>
+            </div>
+            <div class="footer_copyrights pc">
+
+                <p class="footer_copyrights--info">Leffberg 2018-2021 All rights reserved</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="mobile-menu">
+        <ul class="mobile-menu_list">
+            <li class="mobile-menu_item"><a href="#services" class="mobile-menu_link">Services</a></li>
+            <li class="mobile-menu_item"><a href="#portfolio" class="mobile-menu_link">Portfolio</a></li>
+            <li class="mobile-menu_item"><a href="#steps" class="mobile-menu_link">Steps</a></li>
+            <li class="mobile-menu_item"><a href="#designers" class="mobile-menu_link">Designers</a></li>
+        </ul>
+    </div>
+    <script src="./index.js" type="module"></script>
+
+</body>
+
 </html>
