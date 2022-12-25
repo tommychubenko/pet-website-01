@@ -5,14 +5,14 @@
   "homepage": "https://tommychubenko.github.io/pet-website-01",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /pet-website-01/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tommychubenko/pet-website-01.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
-  "author": "Artem Chubenko <artem.chubenko@gmail.com>",
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
